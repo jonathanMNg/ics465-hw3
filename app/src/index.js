@@ -157,9 +157,9 @@ function calculateWinner(squares) {
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
       return [squares[a], squares[b], squares[c], lines[i]];
     }
-    else if(!squares.includes(null)){
-      return 'draw';
-    }
+  }
+  if(!squares.includes(null)) {
+    return 'draw';
   }
   return null;
 }
